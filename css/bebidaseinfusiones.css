@@ -1,0 +1,371 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration:none;
+   }
+ body{
+    
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/fondosemillas.jpg);
+    background-color: rgb(91, 134, 17);
+    
+}
+.topBar{
+        background-color: green;
+        color:rgb(128, 98, 0); 
+
+}
+/* MENU DE NAVEGACION */
+ul{
+    height: 20vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: larger;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(../imagenes/200w.gif);
+    transition-property:all;
+    transition-duration: 2s;
+    
+  }
+
+  ul:hover{
+    background-color: rgb(128, 98, 0); 
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+   li:hover{
+    background-color: rgb(27, 226, 126);
+    color:rgb(128, 98, 0); 
+   }
+   .contenedorTitulo{
+    height:20vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+     
+    
+    }
+   
+     h1{
+    font-size: 60px;
+    background-color: rgb(27, 226, 126);
+    color:rgb(7, 12, 58);
+    
+     
+   }
+   h2{
+    font-size: 60px;
+    color:rgb(11, 17, 70);
+    background-color: rgb(128, 98, 0); 
+    width: 118%;
+
+    
+    }
+
+    /***********CARD*********/
+    .title{
+            text-align: center;
+            font-size:40px;
+            color: rgb(40, 21, 61);
+            
+        }
+
+    .container{
+            width:100%;
+            max-width: 1200px;
+            height: 500px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            background-color: rgb(27, 226, 126);
+
+    }
+    .container .card{
+        width:300px;
+        height:400px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgb(172, 47, 255);
+        overflow:hidden;
+        margin: 20px;
+        text-align: center;
+        transition:all 0.30s;
+
+    }
+    .container .card:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 20px 30px rgb(172, 47, 255);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: rgb(128, 98, 0); 
+        color: rgb(172, 47, 255);
+
+    }
+    .container .card img{
+        width:330px;
+        height: 220px;    
+    }
+
+    .container .card h3{
+        font-weight: 600;
+        background-color: rgb(128, 98, 0);
+    }
+    .container .card p{
+        padding: 0 1rem;
+        font-size: 15px;
+        font-weight:500;
+        text-decoration: none;
+        color: rgb(18, 10, 26);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: inherit;
+        font-weight: bolder;
+      
+    }
+
+/*******ANIMACION***********/
+
+.animacion{
+
+    height: 250px;
+     width:250px;
+     margin:0 auto;
+     background-color:rgb(0, 183, 255);
+     animation-name: animar;
+     animation-duration: 2s;
+     animation-timing-function: ease-out;
+     animation-delay: 1;
+     animation-direction:alternate;
+     animation-iteration-count:infinite;
+    animation-fill-mode:none;
+    animation-play-state:running;
+    background-image: url(../imagenes/hotsale.jpg)
+   
+ }
+ 
+ .animacion p{
+ 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border:1px;
+    font-size: large;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    align-items: center;
+   color: rgb(128, 98, 0); 
+   height: 10px;
+    
+ }
+ 
+ @keyframes animar{
+    20%{ 
+    transform: scale(.4);
+    background-color: violet;
+    border-radius: 100%;
+    
+    }
+    50%{
+    background-color: greenyellow;
+    }
+    100%{
+    transform: scale(.10);
+    }
+ 
+ }
+
+/*/--CONTENEDOR--/*/
+
+.container{
+    display:flex;
+    width:300%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+   height:200%;
+   
+       }
+   
+       .box{
+           width: 200%;
+           height:200%;
+        flex:1;
+        overflow:hidden;
+        margin:1%;
+        box-shadow: 10px 10px 5px 5px rgb(141, 245, 167);
+        line-height:normal;
+        transition:all 600ms;
+       }
+       .box> img{
+           width: 100%;
+           height:calc(100% - 10vh);
+           object-fit: cover;
+           transition: all 1000ms;
+           height:200%;
+       }
+   
+       .box> span{
+           font-size: 15px;
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           display:block;
+           text-align: center;
+           height: 10xh;
+           line-height: 2.6;
+            color:rgb(18, 10, 26);
+            background-color:rgb(128, 98, 0); 
+            
+       }
+   
+       .box:hover{
+           flex:5%;
+       }
+   
+       .box:hover > img{
+           width: 100%;
+           height:100%;
+       }
+
+/* SECCION SERVICIOS */
+.servicios{
+    width: 90vw;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(27, 226, 126);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+   }
+   .servicios div{
+    background-color: rgb(27, 226, 126);
+    width: 27vw;
+    height: 60vh;
+    color:  black;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background:linear-gradient(rgb(163, 163, 29),rgb(26, 172, 26),rgb(119, 11, 119));
+    transform: translate(10px, 10px);
+
+   }
+   .servicios div h4{
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: solid 2px  rgb(141, 245, 167);
+    
+   }
+   .servicios div p{
+    line-height: 25px;
+    
+   }
+   .servicios div a{
+    margin-top: 20px;
+    color: rgb(65, 4, 145);
+    height: 30px;
+    width: 100px;
+    background-color: rgb(145, 255, 0);
+    background-image:linear-gradient(rgb(46, 226, 46),rgb(187, 30, 187),rgb(224, 223, 231));
+   }
+
+    /****FORMULARIO****/
+
+ .form-register{
+    width:400px;
+    background-color:rgb(33, 207, 77);
+    padding: 40px;
+    margin:auto;
+    margin-top:10%;
+    border-radius: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(12, 8, 8);
+    
+}
+         
+.form-register h5{
+       font-size:30px;
+       color: indigo;
+       margin-bottom: 30px;
+       text-decoration: underline;
+
+}
+.controls{
+    width: 100%;
+    background-color:  rgb(141, 245, 167);
+    padding: 10px;
+    border-radius:4px;
+    margin-bottom: 16px;
+    border: 1px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;  
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.form-register a:hover{
+       color: rgb(224, 223, 231);
+       text-decoration: underline;
+       
+}
+
+.form-register .botons{
+
+   width: 100%;
+   background-color: rgb(23, 0, 128);
+   border: none;
+   padding: 12px;
+   color:white;
+   margin: 16px;
+   font-size:16px;
+
+}
+
+/***FLEXCONTAINER***/
+    
+.flex-container{
+    
+    box-sizing:border-box;
+    display: flex;
+    background-color:rgb(141, 245, 167);
+   flex-wrap: wrap;
+   align-content: space-around;
+   padding:30px;
+   justify-content: center;
+   border: 30px solid rgb(27, 226, 126);
+   width:100%;
+   height: 50%;
+            
+}
+.flex-container div{
+background-color:rgb(192, 159, 51); 
+width:450px;
+margin:10px;
+text-align: center;
+line-height:100 px;
+border: 4px solid indigo;
+height:50px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: italic;
+color:black;
+text-decoration: underline;
+font-size: 20px;
+
+}
+
+
+
+
+
