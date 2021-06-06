@@ -24,7 +24,7 @@
 }
 /* MENU DE NAVEGACION */
 ul{
-    height: 20vh;
+    height: 80%;
     width: 60vw;
     display: flex;
     flex-direction: row;
